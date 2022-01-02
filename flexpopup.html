@@ -237,16 +237,16 @@ align-items: flex-start;
 
 </body>
 <script>
-// Get the button that opens the modal
+
 var btn = document.querySelectorAll("span.button");
 
-// All page modals
+
 var modals = document.querySelectorAll('.popup');
 
-// Get the <span> element that closes the modal
+
 var spans = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal
+
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
     e.preventDefault();
@@ -255,7 +255,7 @@ for (var i = 0; i < btn.length; i++) {
  }
 }
 
-// When the user clicks on <span> (x), close the modal
+
 for (var i = 0; i < spans.length; i++) {
  spans[i].onclick = function() {
     for (var index in modals) {
