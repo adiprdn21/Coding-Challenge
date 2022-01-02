@@ -1,2 +1,0 @@
-# Coding-Challenge
-HTML+CSS
