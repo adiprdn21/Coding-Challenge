@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {font-family: Century Gothic; font-weight: 300}
+.container {
+  display: block;
+  background-color: #f5f5f5;
+}
+.container > div {
+  background-color: white;
+  width: 90%;
+  margin: 5%;
+  text-align: left;
+  line-height: 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #d2d2d2;
+}
+.container img {
+	width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+.profile {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.profile > div {
+  width: auto;
+  margin: 5%;
+  text-align: left;
+  line-height: 15px;
+  font-size: 14px;
+}
+.profile h3 {
+	font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 0 0px;
+    margin: 0 0 0 -20%;
+}
+.profile span {
+	font-size: 13px;
+    color: silver;
+    padding: 20px 0px;
+    font-weight: 300;
+    margin: 0 0 0 -20%;
+}
+.profile img {
+	width: 50px!important;
+    height: 50px;
+    border-radius: 50%!important;
+    object-fit: cover;
+}
+h2 {
+	font-size: 22px;
+    line-height: 24px;
+    font-weight: 300;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.sub {
+	font-size: 13px;
+    color: silver;
+    padding: 20px 10px 10px 10px;
+    font-weight: 300;
+}
+p {
+	padding: 0 10px;
+    line-height: 20px;
+}
+.popup {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0 10px 20px 10px;
+  width: 50%;
+  box-shadow: 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.popup-content img {width: 100%}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.link {
+	display: inline-block;
+    width: 100%;
+}
+.link > span {
+	display: inline-block;
+    margin: 10px;
+}
+.action {
+	display: inline-block;
+    float: right;
+}
+.action > span {
+	display: inline-block;
+    margin: 3px 10px 3px 0;
+    width: 16px;
+}
+.button {
+	color: #567bce;
+	cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+}
+.button:hover{
+	cursor: pointer;
+    text-transform: uppercase;
+    color: black;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+  float: right;
+  margin-bottom: -5px;
+  right: 0px!important;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media only screen and (min-width: 600px) {
+.container {
+  display: flex;
+align-items: flex-start;
+  background-color: #f5f5f5;
+}
+
+.container > div {
+  background-color: white;
+  width: 25%;
+  margin: 10px;
+  text-align: left;
+  line-height: 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid #d2d2d2;
+}
+.img1 {
+	width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div><img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+  <h2>Top Winter Locations</h2>
+  <span class="sub">Lorem Ipsum</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+  <div class="link">
+  <span class="button">SHARE</span>
+  <span class="button" id="explore" href="#popupbox">EXPLORE</span>
+  <span style="float: right"><i class="arrow down"></i></span>
+  </div>
+  </div>
+  <div><img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+  <h2>Top Eastern Roadtrip</h2>
+  <span class="sub">Lorem Ipsum</span>
+  
+  <div class="link">
+  <span class="button">SHARE</span>
+  <span class="button" id="explore" href="#popupbox2">EXPLORE</span>
+  <span style="float: right"><i class="arrow down"></i></span>
+  </div>
+  </div>
+  <div>
+  	<div class="profile">
+    	<div><img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+        </div>
+        <div><h3>Christy</h3>
+        <span class="duration">Lorem Ipsum</span>
+        </div>
+    </div>
+    <img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+  <h2>Kangaroo Valley Safari</h2>
+  <span class="sub">Lorem Ipsum</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>  
+  </div>
+  <div>
+    <img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+  <h2>Kangaroo Valley Safari</h2>
+  <span class="sub">Lorem Ipsum</span>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+  <div class="action">
+  <span><img src="https://github.com/adiprdn21/Coding-Challenge/blob/main/heart.gif?raw=true"></span>
+  <span><img src="https://github.com/adiprdn21/Coding-Challenge/blob/main/bookmark.gif?raw=true"></span>
+  <span><img src="https://github.com/adiprdn21/Coding-Challenge/blob/main/loc.gif?raw=true"></span>
+  </div>
+  </div>
+</div>
+
+<div id="popupbox" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+      <img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+      <h2>Top Winter Locations</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+<div id="popupbox2" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+      <img src="https://raw.githubusercontent.com/adiprdn21/Coding-Challenge/main/Mountain.jpg">
+      <h2>Top Eastern Road Trip</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+
+</body>
+<script>
+// Get the button that opens the modal
+var btn = document.querySelectorAll("span.button");
+
+// All page modals
+var modals = document.querySelectorAll('.popup');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</html>
